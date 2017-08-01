@@ -1,6 +1,10 @@
-resume
-======
+# resume
 
 Matthew O'Connor's resume in LaTeX.
 
-Last updated 3/31/2013.
+## Building on Windows:
+
+- `choco install -y miktex`
+- `pdflatex resume.tex`
+
+Last updated July 31, 2017.
