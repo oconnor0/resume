@@ -2,7 +2,7 @@
 % vim:set ft=tex spell:
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[letterpaper,margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
@@ -16,24 +16,24 @@
 % that need indentation to the level of all text in the document
 \newenvironment{indentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{#1}}%
-	\item[]%
+  {\setlength{\leftmargin}{#1}}%
+  \item[]%
 }
 {\end{list}}
 
 % opposite of above; bump a section back toward the left margin
 \newenvironment{unindentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{-0.5#1}}%
-	\item[]%
+  {\setlength{\leftmargin}{-0.5#1}}%
+  \item[]%
 }
 {\end{list}}
 
 % format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]
 {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-	#1 &
-	#2 \\
+  #1 &
+  #2 \\
 \end{tabular*}}
 
 % make "C++" look pretty when used in text by touching up the plus signs
@@ -60,62 +60,80 @@ https://github.com/oconnor0/
 \subsection*{Experience}
 
 \begin{itemize}
-	\parskip=0.1em
+  \parskip=0.1em
 
-	\item
-	\headerrow
-		{\textbf{DirectStream, LLC (formerly SRC Computers, LLC)}}
-		{\textbf{Colorado Springs, CO}}
-	\\
-	\headerrow
-		{\emph{Senior Software Engineer}}
-		{\emph{2013 -- present}}
-	\begin{description}
-		\item[2013 -- present] \hfill \\
-				Writing a \CPP \  compiler using LLVM/Clang that produces Verilog for execution on an FPGA. \\
-				Implementing optimizations on the internal dataflow graph. \\
-				Crafting a threading system to enable parallel use of the FPGA’s resources. \\
-	\end{description}
+  \item
+  \headerrow
+    {\textbf{DirectStream, LLC (formerly SRC Computers, LLC)}}
+    {\textbf{Colorado Springs, CO}}
+  \\
+  \headerrow
+    {\emph{Senior Software Engineer}}
+    {\emph{2013--present}}
+  \begin{description}
+    \item[2013--present] \hfill \\
+        Writing a \CPP \  compiler using LLVM/Clang that produces Verilog for execution on an FPGA. \\
+        Implemented optimizations on the internal dataflow graph. \\
+        Crafted a threading system to enable parallel use of the FPGA’s resources. \\
+        Migrated code base from SVN to Git and added continuous integration. \\
+        Developed an intermediate language tailored to optimize execution on an FPGA.
+  \end{description}
 
-	\item
-	\headerrow
-		{\textbf{Intelligent Software Solutions, Inc.}}
-		{\textbf{Colorado Springs, CO}}
-	\\
-	\headerrow
-		{\emph{Software Engineer}}
-		{\emph{2006 -- 2013}}
-	\begin{description}
-		\item[2012 -- 2013] \hfill \\
-				Worked on the data processing side of a 3-tier web-based analytics engine. \\
-				Designed an API using Java annotations and backed by reflection to simplify developer use.
-		\item[2010 -- 2012] \hfill \\
-				Developed a data processing application that produced \& processed hundreds of gigabytes of in-memory data that it exposed via web services. \\
-				Fixed threading \& performance issues, improving runtimes from overnight to a few minutes.
-		\item[2008 --2010] \hfill \\
-				Worked at a customer’s site, interacting daily, to expose legacy programs via web services \& UI. \\
-				Helped determine requirements, priorities, \& handle emergencies. \\
-				Responsible for the UI and coordinating with the web services developer to ensure service support.
-		\item[2007 -- 2008] \hfill \\
-				Extended the previous project with additional external databases. \\
-				Wrote the mappings between the external databases and the internal data format.
-		\item[2006 -- 2007] \hfill \\
-				Hired for a project that managed \& integrated external databases \& provided a UI to allow analysis, management, planning, \& visualization. \\
-				Mastered and accepted responsibility for modifying the program’s data model.
-	\end{description}
+  \item
+  \headerrow
+    {\textbf{Intelligent Software Solutions, Inc.}}
+    {\textbf{Colorado Springs, CO}}
+  \\
+  \headerrow
+    {\emph{Software Engineer}}
+    {\emph{2006--2013}}
+  \begin{description}
+    \item[2012--2013] \hfill \\
+        Worked on the data processing side of a 3-tier web-based analytics engine. \\
+        Designed an API using Java annotations and backed by reflection to simplify developer use.
+    \item[2010--2012] \hfill \\
+        Developed a data processing application that produced \& processed hundreds of gigabytes of in-memory data that it exposed via web services. \\
+        Fixed threading \& performance issues, improving runtimes from overnight to a few minutes.
+    \item[2008 --2010] \hfill \\
+        Worked at a customer’s site, interacting daily, to expose legacy programs via web services \& UI. \\
+        Helped determine requirements, priorities, \& handle emergencies. \\
+        Responsible for the UI and coordinating with the services developer to ensure service support.
+    \item[2007--2008] \hfill \\
+        Extended the previous project with additional external databases. \\
+        Wrote the mappings between the external databases and the internal data format.
+    \item[2006--2007] \hfill \\
+        Hired for a project that managed \& integrated external databases \& provided a UI to allow \\ analysis, management, planning, \& visualization. \\
+        Mastered and accepted responsibility for modifying the program’s data model.
+  \end{description}
 
-	\item
-	\headerrow
-		{\textbf{New Life Church}}
-		{\textbf{Colorado Springs, CO}}
-	\\
-	\headerrow
-		{\emph{Software Engineer}}
-		{\emph{September -- October 2005}}
-	\begin{itemize}
-		\item Modified an existing open source ticketing system to meet needs.
-		\item Deployed to production and used to sell thousands of tickets for Christmas and Easter events.
-	\end{itemize}
+  \item
+  \headerrow
+    {\textbf{Zero}}
+    {\textbf{https://github.com/oconnor0/zero}}
+  \\
+  \headerrow
+    {\emph{Designer and Sole Engineer}}
+    {\emph{March--April 2012}}
+  \begin{description}
+    \item[Spring 2012] \hfill \\
+      Started developing a programming language targeting the JVM. \\
+      Wrote parser and AST-walking interpreter. \\
+      Can write and correctly evalute Fibonacci.
+   \end{description}
+
+  \item
+  \headerrow
+    {\textbf{New Life Church}}
+    {\textbf{Colorado Springs, CO}}
+  \\
+  \headerrow
+    {\emph{Software Engineer}}
+    {\emph{September--October 2005}}
+  \begin{description}
+    \item[Fall 2005] \hfill \\
+        Modified an existing open source ticketing system to meet needs. \\
+        Deployed to production and used to sell thousands of tickets for Christmas and Easter events.
+  \end{description}
 
 \end{itemize}
 
@@ -125,19 +143,19 @@ https://github.com/oconnor0/
 \subsection*{Education}
 
 \begin{itemize}
-	\parskip=0.1em
+  \parskip=0.1em
 
-	\item
-	\headerrow
-		{\textbf{University of Colorado, Colorado Springs}}
-		{\textbf{Colorado Springs, CO}}
-	\\
-	\headerrow
-		{\emph{College of Engineering and Applied Science, B.S. in Computer Science}}
-		{\emph{2002 -- 2005}}
-	\begin{description}
-		\item[Coursework] Compilers, operating systems, computer architecture, automata, algorithms, data structures, numerical computing, 3D graphics programming, and web programming.
-	\end{description}
+  \item
+  \headerrow
+    {\textbf{University of Colorado, Colorado Springs}}
+    {\textbf{Colorado Springs, CO}}
+  \\
+  \headerrow
+    {\emph{College of Engineering and Applied Science, B.S. in Computer Science}}
+    {\emph{2002--2005}}
+  \begin{description}
+    \item[Coursework] Compilers, operating systems, computer architecture, automata, algorithms, data structures, numerical computing, 3D graphics programming, and web programming.
+  \end{description}
 
 \end{itemize}
 
@@ -149,10 +167,10 @@ https://github.com/oconnor0/
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description}
-	\item[Languages:] \ \\
-	Experience in \CPP \ , Haskell, Java, \LaTeX, OCaml, PHP, Rust, SQL, and Verilog. \\
-	\item[Interests:] \ \\
-	Programming languages, type systems, compiler design, performance, clean code, game development and playing (primarily tabletop), high-level languages, open source, the free and open internet.
+  \item[Languages:] \ \\
+  Experience in \CPP \ , Haskell, Java, \LaTeX, OCaml, Python, PHP, Rust, D, SQL, and Verilog. \\
+  \item[Interests:] \ \\
+  Programming languages, type systems, compiler design, performance, clean code, game development and playing (primarily tabletop), high-level languages, open source, the free and open internet.
 \end{description}
 \end{indentsection}
 
