@@ -39,6 +39,9 @@
 % make "C++" look pretty when used in text by touching up the plus signs
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+% as well as C# and F#. Courtesy of https://www.johndcook.com/blog/2011/10/18/typesetting-c-in-latex/
+\newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\scriptsize\bf \#}}
+\newcommand{\FS}{F\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\scriptsize\bf \#}}
 
 % and the actual content starts here
 \begin{document}
@@ -61,6 +64,21 @@ https://github.com/oconnor0/
 
 \begin{itemize}
   \parskip=0.1em
+
+  \item
+  \headerrow
+    {\textbf{Xledger, Inc}}
+    {\textbf{Colorado Springs, CO}}
+  \\
+  \headerrow
+    {\emph{Senior Software Engineer}}
+    {\emph{March 2020--present}}
+  \begin{description}
+    \item[2020--2021] \hfill \\
+        Improved search history user interface while learning ClojureScript. \\
+        Implemented GraphQL subscriptions and extended mutations to provide new, faster operations without breaking existing API. \\
+        Integrated existing ERP banking engine with Plaid to remove need for manual data entry \\  and to ease bank statement reconciliation.
+  \end{description}
 
   \item
   \headerrow
@@ -95,7 +113,7 @@ https://github.com/oconnor0/
         Worked on the data processing side of a 3-tier web-based analytics engine. \\
         Designed an API using Java annotations and backed by reflection to simplify developer use.
     \item[2010--2012] \hfill \\
-        Developed a data processing application that produced and processed hundreds of gigabytes of in-memory data that it exposed via web services. \\
+        Developed a data processing application that produced and processed hundreds \\  of gigabytes of in-memory data that it exposed via web services. \\
         Fixed threading and performance issues, improving runtimes from overnight to a few minutes.
     \item[2008 --2010] \hfill \\
         Worked at a customer’s site, interacting daily, to expose legacy programs via web services \& UI. \\
@@ -170,9 +188,9 @@ https://github.com/oconnor0/
 \hyphenpenalty=1000
 \begin{description}
   \item[Languages:] \ \\
-  Experience in \CPP , Java, \LaTeX, OCaml, Haskell, Python, PHP, Ruby, JavaScript, Rust, D, SQL, \\  Verilog, Bash, Awk, and Lisp.
+  Experience in \CPP , Java, \LaTeX, OCaml, Haskell, Python, PHP, Ruby, JavaScript, Rust, D, SQL, \\  Verilog, ClojureScript, \CS, \FS, Bash, Awk, and Lisp.
   \item[Operating Systems, Practices, and Tooling:] \ \\
-  DevOps, Docker, Git, SVN, Linux, and Windows.
+  DevOps, Docker, Git, Linux, SVN, and Windows.
   \item[Interests:] \ \\
   Programming languages, compiler design, performance, clean code, type systems, \\ game development and playing (primarily tabletop), research, high-level languages, \\ open source, the free and open internet, making the world a better place.
 \end{description}
